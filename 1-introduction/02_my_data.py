@@ -1,7 +1,16 @@
 # My Data 🙂
 # Codédex
 
-concepts = ['queues', 'graphs', 'stacks', 'recursion', 'dijkstra\'s algorithm']
+friends = ['helly', 'irving', 'dylan']
 
-concepts.sort()
-print(concepts)
+song = {
+  'name': 'Swimming',
+  'artist': 'Flawed Mangoes',
+  'year': 2024
+}
+
+places = {'Japan', 'Hawaii', 'Yosemite', 'Morocco', 'Taiwan'}
+          
+print(friends)
+print(songs)
+print(places)
