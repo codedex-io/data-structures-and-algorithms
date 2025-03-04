@@ -12,5 +12,5 @@ song = {
 places = {'Japan', 'Hawaii', 'Yosemite', 'Morocco', 'Taiwan'}
           
 print(friends)
-print(songs)
+print(song)
 print(places)
