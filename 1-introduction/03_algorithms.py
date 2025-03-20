@@ -16,7 +16,7 @@ def insertion_sort(arr):
 
 # Update the list below
 
-input_list = [5, 3, 8, 4, 2, 10]
+input_list = [5, 3, 8, 4, 2, 10, 3]
 
 output_list = insertion_sort(input_list)
 
