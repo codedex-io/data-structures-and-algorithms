@@ -1,4 +1,4 @@
-# Efficiency Demo
+# Efficiency Demo ⏱️
 # Codédex
 
 import random
