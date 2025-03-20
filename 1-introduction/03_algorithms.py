@@ -1,4 +1,4 @@
-# Algorithm Demo 🙂
+# Algorithm Demo 🤔
 # Codédex
 
 def insertion_sort(arr):
