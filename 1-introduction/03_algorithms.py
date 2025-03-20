@@ -1,3 +1,5 @@
+# Algorithms Demo 🙂
+# Codédex
 
 def insertion_sort(arr):
   for i in range(1, len(arr)-1):  
