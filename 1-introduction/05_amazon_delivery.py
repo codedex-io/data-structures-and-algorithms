@@ -11,4 +11,4 @@ packages = {
   5: "202 Maple St"
 }
 
-print('Starting from Jersey, I would go into the city, go down to drop off the two packages in Brooklyn, and drive up to to get the one on the east side.')
+print('Starting from Jersey, I would go into the city, go down to drop off the two packages in Brooklyn, and drive up to get the one east.')
