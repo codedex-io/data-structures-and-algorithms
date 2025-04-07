@@ -1,7 +1,12 @@
-# Welcome 👋
+# Favorite Shows 📺
 # Codédex
 
-concepts = ['queues', 'graphs', 'stacks', 'recursion', 'dijkstra\'s algorithm']
+favorite_shows = ['The Last of Us', 'Band of Brothers', 'Game of Thrones']
 
-concepts.sort()
-print(concepts)
+print(favorite_shows[0])
+print(favorite_shows[1])
+print(favorite_shows[2])
+
+favorite_shows.append('Severance')
+
+print(len(favorite_shows))
