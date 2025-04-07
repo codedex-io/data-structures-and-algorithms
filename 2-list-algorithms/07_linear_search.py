@@ -12,7 +12,6 @@ def linear_search(input_list, target_value):
 email_list = [
   'dwight.schrute@dundermifflin.com', 
   'michael.scott@dundermifflin.com',
-  'mochi@codedex.io',
   'mgoodyear@lumonindustries.com',
   'walter.white@jpwynnehigh.edu',
   'hank@dea.gov',
