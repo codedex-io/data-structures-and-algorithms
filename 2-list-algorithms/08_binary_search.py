@@ -1,23 +1,42 @@
-# Algorithm Demo 🤔
+# Binary Search 📧
 # Codédex
 
-def insertion_sort(arr):
-  for i in range(1, len(arr)-1):  
-    key = arr[i]  
-    j = i - 1  
-  
-    while j >= 0 and arr[j] > key:
-      arr[j + 1] = arr[j]
-      j -= 1
-       
-    arr[j + 1] = key  
+def binary_search(input_list, target):
+  if not input_list:
+    return False  
+ 
+  mid = len(input_list) // 2
+ 
+  if input_list[mid] == target:
+    return True
+  elif  target < input_list[mid]:
+    return binary_search(input_list[:mid], target)
+  elif  target > input_list[mid]:
+    return binary_search(input_list[mid + 1:], target)
 
-  return arr
+# ------------- TESTING YOUR ALGORITHM -----------------
 
-# Update the list below
+email_list = [
+  'dwight.schrute@dundermifflin.com', 
+  'michael.scott@dundermifflin.com',
+  'mochi@codedex.io',
+  'mgoodyear@lumonindustries.com',
+  'walter.white@jpwynnehigh.edu',
+  'hank@dea.gov',
+  'kimberly.finkle@essexu.edu',
+  'sheldon@caltech.edu',
+  'elliot@allsafe.com',
+  'mr.robot@fsociety.com',
+  'mulder@fbi.gov',
+  'carrie@sexandthecity.tvs',
+  'pleasecallmebarney@yahoo.com',
+  'buffy@sunnydale.edu'
+]
 
-input_list = [5, 3, 8, 4, 2, 10, 3]
+print(linear_search(email_list, 'mgoodyear@lumonindustries.com'))   # Output: True
+print(linear_search(email_list, 'mark.scout@lumonindustries.com'))  # Output: False
 
-output_list = insertion_sort(input_list)
+# Checking an edge case - what if our input list is empty?
 
-print(output_list)
+empty_list = []
+print(linear_search(empty_list, 'dwight@dundermifflin.com'))        # Output: False
