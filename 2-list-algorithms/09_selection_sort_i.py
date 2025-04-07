@@ -11,7 +11,6 @@ def swap(input_list, index_1, index_2):
   input_list[index_2] = temp
   return input_list # Make sure to return the swapped list
 
-
 # The lowest index before we begin the for loop is 0
 
 lowest_index = 0
