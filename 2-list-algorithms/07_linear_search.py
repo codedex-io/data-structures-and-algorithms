@@ -7,6 +7,8 @@ def linear_search(input_list, target_value):
       return True
   return False
 
+# ------------- TESTING YOUR ALGORITHM -----------------
+
 email_list = [
   'dwight.schrute@dundermifflin.com', 
   'michael.scott@dundermifflin.com',
