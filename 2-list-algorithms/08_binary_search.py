@@ -2,17 +2,20 @@
 # Codédex
 
 def binary_search(input_list, target):
-  if not input_list:
-    return False  
- 
-  mid = len(input_list) // 2
- 
-  if input_list[mid] == target:
-    return True
-  elif  target < input_list[mid]:
-    return binary_search(input_list[:mid], target)
-  elif  target > input_list[mid]:
-    return binary_search(input_list[mid + 1:], target)
+  left = 0
+  right = len(input_list) - 1
+    
+  while left <= right:
+    mid = (left + right) // 2  # Finds the middle index
+        
+    if input_list[mid] == target:
+      return True  # Target found
+    elif target < input_list[mid]:
+      right = mid - 1  # Search the left half
+    else:
+      left = mid + 1  # Search the right half
+    
+  return False  # Target not found
 
 # ------------- TESTING YOUR ALGORITHM -----------------
 
@@ -32,10 +35,10 @@ email_list = [
   'buffy@sunnydale.edu'
 ]
 
-print(linear_search(email_list, 'mgoodyear@lumonindustries.com'))   # Output: True
-print(linear_search(email_list, 'mark.scout@lumonindustries.com'))  # Output: False
+print(binary_search(email_list, 'mgoodyear@lumonindustries.com'))   # Output: True
+print(binary_search(email_list, 'mark.scout@lumonindustries.com'))  # Output: False
 
 # Checking an edge case - what if our input list is empty?
 
 empty_list = []
-print(linear_search(empty_list, 'dwight@dundermifflin.com'))        # Output: False
+print(binary_search(empty_list, 'dwight@dundermifflin.com'))        # Output: False
