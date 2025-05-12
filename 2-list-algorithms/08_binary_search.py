@@ -6,14 +6,14 @@ def binary_search(input_list, target):
   right = len(input_list) - 1
     
   while left <= right:
-    mid = (left + right) // 2  # Finds the middle index
+    mid = (left + right) // 2   # Finds the middle index
         
     if input_list[mid] == target:
-      return True  # Target found
+      return True               # Target found
     elif target < input_list[mid]:
-      right = mid - 1  # Search the left half
+      right = mid - 1           # Search the left half
     else:
-      left = mid + 1  # Search the right half
+      left = mid + 1            # Search the right half
     
   return False  # Target not found
 
