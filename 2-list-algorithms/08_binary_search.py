@@ -15,7 +15,7 @@ def binary_search(input_list, target):
     else:
       left = mid + 1            # Search the right half
     
-  return False  # Target not found
+  return False                  # Target not found
 
 # ------------- TESTING YOUR ALGORITHM -----------------
 
